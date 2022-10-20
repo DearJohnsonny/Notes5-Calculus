@@ -21,3 +21,18 @@ $$
 $$
 
 当题目需要我们计算全微分时, 结果就是形如上面的式子的形式。
+
+### 梯度
+接下来我们定义函数 $f(x, y)$ 在点 $\left(x_0, y_0\right)$ 的梯度, 指二维向量
+
+$$
+\left.\operatorname{grad} f\right|_{\left(x_0, y_0\right)}=\left(\partial_x f\left(x_0, y_0\right), \partial_y f\left(x_0, y_0\right)\right) .
+$$
+
+梯度的意义是函数 $f(x, y)$ 在点 $\left(x_0, y_0\right)$ 附近上升最快方向。如果 $f$ 可微, 那么函 数 $f$ 上升量
+
+$$
+f(x+\Delta x, y+\Delta y)-f(x, y) \approx\left(\partial_x f\left(x_0, y_0\right), \partial_y f\left(x_0, y_0\right)\right) \cdot(\Delta x, \Delta y)
+$$
+
+固定向量 $(\Delta x, \Delta y)$ 的长度, 当选择向量 $(\Delta x, \Delta y)$ 平行于梯度向量 $\left.\operatorname{grad} f\right|_{\left(x_0, y_0\right)}$ 时, 上 升量 $f(x+\Delta x, y+\Delta y)-f(x, y)$ 最大。这是因为为了使内积 $\left(\partial_x f\left(x_0, y_0\right), \partial_y f\left(x_0, y_0\right)\right)$. $(\Delta x, \Delta y)$ 最大, 需要夹角的余项值最大, 即夹角为 0 度。
