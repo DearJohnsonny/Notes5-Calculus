@@ -44,3 +44,17 @@ f(x+\Delta x, y+\Delta y)-f(x, y) \approx\left(\partial_x f\left(x_0, y_0\right)
 $$
 
 固定向量 $(\Delta x, \Delta y)$ 的长度, 当选择向量 $(\Delta x, \Delta y)$ 平行于梯度向量 $\left.\operatorname{grad} f\right|_{\left(x_0, y_0\right)}$ 时, 上 升量 $f(x+\Delta x, y+\Delta y)-f(x, y)$ 最大。这是因为为了使内积 $\left(\partial_x f\left(x_0, y_0\right), \partial_y f\left(x_0, y_0\right)\right)$. $(\Delta x, \Delta y)$ 最大, 需要夹角的余项值最大, 即夹角为 0 度。
+
+#### 梯度下降算法
+
+我们用 $w_i$ 表示权重的初始值， $w_{i+1}$ 表示更新后的权重值，用 $\alpha$ 表示学习率，则有:
+
+$$
+w_{i+1}=w_i-\alpha * \frac{d L}{d w_i} \text 
+$$
+
+$$
+b_{i+1}=b_i-\alpha * \frac{d L}{d b_i}
+$$
+
+在梯度下降中，我们会重复上式多次，直至损失函数值收敛不变
