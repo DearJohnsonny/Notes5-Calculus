@@ -47,14 +47,17 @@ $$
 
 #### 梯度下降算法
 
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199714711-c74524ad-3338-46b7-86bd-18b4561f2b6c.png" width="600">
+</div>
+
 我们用 $w_i$ 表示权重的初始值， $w_{i+1}$ 表示更新后的权重值，用 $\alpha$ 表示学习率，则有:
 
 $$
-w_{i+1}=w_i-\alpha * \frac{d L}{d w_i} \text 
-$$
-
-$$
-b_{i+1}=b_i-\alpha * \frac{d L}{d b_i}
+\begin{aligned}
+&w_{i+1}=w_i-\alpha * \frac{d L}{d w_i} \text { (3) } \\
+&b_{i+1}=b_i-\alpha * \frac{d L}{d b_i}(4)
+\end{aligned}
 $$
 
 在梯度下降中，我们会重复上式多次，直至损失函数值收敛不变
