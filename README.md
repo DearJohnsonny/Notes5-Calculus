@@ -1,3 +1,9 @@
+# 重拾基础
+## 牛顿求根迭代法
+用牛顿迭代法解非线性方程，是把非线性方程 $f(x)=0$ 线性化的一种近似方法。把 $f(x)$ 在点 $x_0$ 的某邻域内展开成泰勒 级数 $f(x)=f\left(x_0\right)+f^{\prime}\left(x_0\right)\left(x-x_0\right)+\frac{f^{\prime \prime}\left(x_0\right)\left(x-x_0\right)^2}{2 !}+\cdots+\frac{f^{(n)}\left(x_0\right)\left(x-x_0\right)^n}{n !}+R_n(x)$ ，取其线性部分 (即泰勒展开的前两项)，并令其等于0，即 $f\left(x_0\right)+f^{\prime}\left(x_0\right)\left(x-x_0\right)=0$ ，以此作为非线性方程 $f(x)=0$ 的近似方程， 若 $f^{\prime}\left(x_0\right) \neq 0$ ，则其解为 $x_1=x_0-\frac{f\left(x_0\right)}{f^{\prime}\left(x_0\right)}$ ， 这样，得到牛顿迭代法的一个迭代关系式: $x_{n+1}=x_n-\frac{f\left(x_n\right)}{f^{\prime}\left(x_n\right)}$ 。
+
+![image](https://user-images.githubusercontent.com/111955215/199713255-519acf4e-8fc7-4308-a4e9-d8948078911f.png)
+
 # 多元函数微分学
 ## 偏导数与全微分
 我们把二元函数 $f(x, y)$ 看作两个独立自变量的函数, 如果固定 $y$, 可以将 $f(x, y)$ 看 作只关于 $x$ 的函数, 并可以计算导数，记为 $f(x, y)$ 关于自变量 $x$ 的偏导数 $\partial_x f$ 。用极限的 语言定义是
