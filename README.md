@@ -48,6 +48,10 @@ $$
 #### 梯度下降算法
 
 <div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199716741-46274e9e-21c8-489f-bef5-4b57eb958578.png" width="600">
+</div>
+
+<div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/199714711-c74524ad-3338-46b7-86bd-18b4561f2b6c.png" width="600">
 </div>
 
