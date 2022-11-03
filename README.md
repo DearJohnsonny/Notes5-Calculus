@@ -3,7 +3,7 @@
 用牛顿迭代法解非线性方程，是把非线性方程 $f(x)=0$ 线性化的一种近似方法。把 $f(x)$ 在点 $x_0$ 的某邻域内展开成泰勒 级数 $f(x)=f\left(x_0\right)+f^{\prime}\left(x_0\right)\left(x-x_0\right)+\frac{f^{\prime \prime}\left(x_0\right)\left(x-x_0\right)^2}{2 !}+\cdots+\frac{f^{(n)}\left(x_0\right)\left(x-x_0\right)^n}{n !}+R_n(x)$ ，取其线性部分 (即泰勒展开的前两项)，并令其等于0，即 $f\left(x_0\right)+f^{\prime}\left(x_0\right)\left(x-x_0\right)=0$ ，以此作为非线性方程 $f(x)=0$ 的近似方程， 若 $f^{\prime}\left(x_0\right) \neq 0$ ，则其解为 $x_1=x_0-\frac{f\left(x_0\right)}{f^{\prime}\left(x_0\right)}$ ， 这样，得到牛顿迭代法的一个迭代关系式: $x_{n+1}=x_n-\frac{f\left(x_n\right)}{f^{\prime}\left(x_n\right)}$ 。
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/199713464-8c6784d3-7fd9-4b91-bedb-e6f076284ce9.png" width="1500">
+<img src="https://user-images.githubusercontent.com/111955215/199713464-8c6784d3-7fd9-4b91-bedb-e6f076284ce9.png" width="600">
 </div>
 
 # 多元函数微分学
